@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 60, 0, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(255, 60, 0, 0.6); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+body {
+  margin: 0;
+  background: #000;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff3c00, #1b3984);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #ff5722, #3f51b5);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ff3c00, #ff6b35, #1b3984, #4fc3f7);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 6s ease infinite;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.social-icon {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  color: #ff3c00;
+  filter: drop-shadow(0 10px 20px rgba(255, 60, 0, 0.4));
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.social-icon:hover::before {
+  left: 100%;
+}
+
+.typing-effect {
+  overflow: hidden;
+  border-right: 3px solid #ff3c00;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.glow-button {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(45deg, #ff3c00, #1b3984);
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  animation: pulse-glow 2s infinite;
+  transform: translateY(-2px);
+}
+
+.glow-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.glow-button:hover::before {
+  left: 100%;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+}
+
+.tech-tag:hover {
+  background: rgba(255, 60, 0, 0.2);
+  border-color: rgba(255, 60, 0, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 60, 0, 0.3);
+}
+
+.project-image {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.project-image:hover {
+  transform: scale(1.08);
+  filter: brightness(1.1) contrast(1.2);
+}
+
+.section-title {
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-shadow: 0 0 30px rgba(255, 60, 0, 0.3);
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
