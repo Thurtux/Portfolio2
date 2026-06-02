@@ -44,6 +44,9 @@ const translations = {
   }
 };
 
+// Coloque a URL da sua foto aqui
+const PROFILE_IMAGE_URL = "https://i.postimg.cc/QNJ8VXjB/35d9dc79-792b-4e47-a5d6-1904e2feab8e.jpg";
+
 function App() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [language, setLanguage] = useState<'pt' | 'en'>('pt');
@@ -271,8 +274,8 @@ function App() {
 
         <Section className="text-white">
           <div className="max-w-4xl mx-auto px-4">
-            <motion.h2 
-              className="text-6xl font-black mb-12 gradient-text section-title text-center"
+            <motion.h2
+              className="text-6xl font-black mb-10 gradient-text section-title text-center"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -280,7 +283,31 @@ function App() {
             >
               {t.about}
             </motion.h2>
-            <motion.p 
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="flex justify-center mb-10"
+            >
+              <div className="relative">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl glass-card">
+                  {PROFILE_IMAGE_URL ? (
+                    <img
+                      src={PROFILE_IMAGE_URL}
+                      alt="Arthur Santos Lopes"
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500/20 to-purple-500/20 text-white/40 text-center p-4 text-xs">
+                      Adicione sua foto em PROFILE_IMAGE_URL
+                    </div>
+                  )}
+                </div>
+                <div className="absolute inset-0 rounded-full ring-4 ring-blue-500/20 animate-pulse" />
+              </div>
+            </motion.div>
+            <motion.p
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -294,7 +321,7 @@ function App() {
 
         <Section className="text-white">
           <div className="max-w-4xl mx-auto px-4">
-            <motion.h2 
+            <motion.h2
               className="text-6xl font-black mb-16 gradient-text section-title text-center"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
