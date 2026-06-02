@@ -98,7 +98,38 @@ function App() {
       ],
       imageUrl: "https://i.postimg.cc/QC9qDDbb/Captura-de-tela-2026-05-27-125348.png",
       liveUrl: "https://maison-elara-nu.vercel.app/"
-    }
+    },
+    {
+  title: "Gustha · Consultoria de Estilo",
+  description: language === 'pt'
+    ? "Site para consultor de estilo pessoal com sistema de reserva de consultorias, apresentando os serviços de styling e uma galeria de looks."
+    : "Website for a personal style consultant with a consultation booking system, showcasing styling services and a lookbook gallery.",
+  details: language === 'pt' ? [
+    "Sistema de reserva de consultorias",
+    "Catálogo de serviços de consultoria de estilo",
+    "Galeria de looks e transformações",
+    "Apresentação do consultor e da metodologia",
+    "Depoimentos de clientes",
+    "Contato direto via WhatsApp"
+  ] : [
+    "Consultation booking system",
+    "Style consulting service catalog",
+    "Lookbook and transformation gallery",
+    "Consultant bio and methodology",
+    "Client testimonials",
+    "Direct WhatsApp contact"
+  ],
+  technologies: [
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "Node.js",
+    "Express"
+  ],
+  imageUrl: "https://i.postimg.cc/43q5zbP8/5a642669-22c9-4c88-a0b2-7034d11351aa.jpg", 
+  liveUrl: "https://g7-nvr1.vercel.app/"
+}
   ];
 
   return (
