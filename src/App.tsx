@@ -32,7 +32,7 @@ const translations = {
   },
   pt: {
     about: "Sobre Mim",
-    aboutText: "Sou um desenvolvedor apaixonado por transformar ideias em experiências digitais inovadoras. Com expertise em desenvolvimento web e gráficos 3D, combino tecnologia e criatividade para criar projetos dinâmicos, envolventes e impactantes. Meu objetivo é sempre ir além do convencional, entregando soluções que unem funcionalidade e design de forma única.",
+    aboutText: "Sou desenvolvedor web com expertise em sites de alta performance e experiências 3D interativas. Vamos conversar sobre o seu projeto?",
     projects: "Projetos",
     contact: "Contato",
     contactText: "Interessado em trabalhar juntos? Entre em contato!",
