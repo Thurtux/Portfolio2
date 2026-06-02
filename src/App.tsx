@@ -20,7 +20,7 @@ interface Project {
 const translations = {
   en: {
     about: "About Me",
-    aboutText: "I am a developer passionate about transforming ideas into innovative digital experiences. With expertise in web development and 3D graphics, I combine technology and creativity to create dynamic, engaging, and impactful projects. My goal is to always go beyond the conventional, delivering solutions that uniquely combine functionality and design.",
+    aboutText: "I'm a web developer specialized in high-performance websites and interactive 3D experiences. I turn ideas into digital products that are fast, beautiful, and that actually convert. Let's talk about your project?",
     projects: "Projects",
     contact: "Contact",
     contactText: "Interested in working together? Get in touch!",
@@ -32,7 +32,7 @@ const translations = {
   },
   pt: {
     about: "Sobre Mim",
-    aboutText: "Sou desenvolvedor web com expertise em sites de alta performance e experiências 3D interativas. Vamos conversar sobre o seu projeto?",
+    aboutText: "Sou desenvolvedor web especializado em sites de alta performance e experiências 3D interativas. Transformo ideias em produtos digitais rápidos, bonitos e que realmente convertem. Vamos conversar sobre o seu projeto?",
     projects: "Projetos",
     contact: "Contato",
     contactText: "Interessado em trabalhar juntos? Entre em contato!",
