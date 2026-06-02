@@ -139,6 +139,7 @@ const Earth = ({ scale = 1 }: EarthProps) => {
           side={THREE.BackSide}
         />
       </mesh>
+
     </group>
   );
 };

@@ -75,7 +75,7 @@ function App() {
     {
       title: "Maison Elara",
       description: language === 'pt' 
-        ? "Site completo para salão de beleza com agendamento para o whatssap, apresentando todos os serviços disponíveis, galeria de foto."
+        ? "Site completo para salão de beleza com agendamento para o WhatsApp, apresentando todos os serviços disponíveis, galeria de foto."
         : "Complete website for a beauty salon with WhatsApp booking, showcasing all available services and a photo gallery.",
       details: language === 'pt' ? [
         "Sistema de agendamento",
