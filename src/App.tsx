@@ -103,7 +103,7 @@ function App() {
       liveUrl: "https://maison-elara-nu.vercel.app/"
     },
     {
-  title: "Gustha · Consultoria de Estilo",
+  title: "Gustha · personal style",
   description: language === 'pt'
     ? "Site para personal style com sistema de reserva de consultorias, apresentando os serviços de styling e uma galeria de looks."
     : "Website for a personal style consultant with a consultation booking system, showcasing styling services and a lookbook gallery.",
