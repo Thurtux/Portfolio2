@@ -76,7 +76,7 @@ function App() {
       title: "Maison Elara",
       description: language === 'pt' 
         ? "Site completo para salão de beleza com agendamento para o whatssap, apresentando todos os serviços disponíveis, galeria de foto."
-        : "Complete website for a beauty salon with whatsapp booking, showcasing all available services and a photo gallery.",
+        : "Complete website for a beauty salon with WhatsApp booking, showcasing all available services and a photo gallery.",
       details: language === 'pt' ? [
         "Sistema de agendamento",
         "Catálogo completo de produtos e serviços",
@@ -103,7 +103,7 @@ function App() {
       liveUrl: "https://maison-elara-nu.vercel.app/"
     },
     {
-  title: "Gustha · personal style",
+  title: "Gustha · Personal Stylist",
   description: language === 'pt'
     ? "Site para personal style com sistema de reserva de consultorias, apresentando os serviços de styling e uma galeria de looks."
     : "Website for a personal style consultant with a consultation booking system, showcasing styling services and a lookbook gallery.",
